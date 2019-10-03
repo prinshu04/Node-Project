@@ -1,7 +1,7 @@
 const http=require("http");
 const fs=require("fs");
 var url=require("url");
-var port=process.env.port||3000;
+var port=process.env.PORT||3000;
 var data=fs.readFileSync("./data.json");
 var overview=fs.readFileSync("./templates/overview.html");
 var mypro=fs.readFileSync("./templates/product.html");
